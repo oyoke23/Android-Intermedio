@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.horoscapp.databinding.FragmentHoroscopeBinding
-
+@AndroidEntryPoint
 class HoroscopeFragment : Fragment() {
 
     private var _binding: FragmentHoroscopeBinding? = null
