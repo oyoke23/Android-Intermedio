@@ -19,11 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/dancing"
-            android:text="HoroscApp"
-            android:textColor="@color/secondary"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/Title"
+            android:text="@string/horoscapp"
+            />
     </FrameLayout>
 
     <androidx.fragment.app.FragmentContainerView

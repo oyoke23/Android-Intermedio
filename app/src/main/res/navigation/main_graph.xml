@@ -19,5 +19,18 @@
         android:id="@+id/horoscopeFragment"
         android:name="com.example.horoscapp.ui.horoscope.HoroscopeFragment"
         android:label="fragment_horoscope"
-        tools:layout="@layout/fragment_horoscope" />
+        tools:layout="@layout/fragment_horoscope" >
+        <action
+            android:id="@+id/action_horoscopeFragment_to_horoscopeDetailActivity"
+            app:destination="@id/horoscopeDetailActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/horoscopeDetailActivity"
+        android:name="com.example.horoscapp.ui.detail.HoroscopeDetailActivity"
+        android:label="activity_horoscope_detail"
+        tools:layout="@layout/activity_horoscope_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.example.horoscapp.domain.model.HoroscopeModel" />
+    </activity>
 </navigation>
