@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">HoroscApp</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--    BottomBar-->
@@ -20,5 +19,8 @@
     <string name="capricorn">Capricorn</string>
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
+    <string name="horoscapp">HoroscApp</string>
+    <string name="content_horoscope_image">Horoscope image</string>
+    <string name="content_back_button">Back button</string>
 
 </resources>
