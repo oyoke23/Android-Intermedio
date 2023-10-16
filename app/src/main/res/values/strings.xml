@@ -23,4 +23,10 @@
     <string name="content_horoscope_image">Horoscope image</string>
     <string name="content_back_button">Back button</string>
 
+    <!--    Luck-->
+    <string name="share">Share</string>
+    <string name="card">card</string>
+    <string name="roulette_image">Roulette image</string>
+    <string name="result_luck_card">result luck card</string>
+
 </resources>
