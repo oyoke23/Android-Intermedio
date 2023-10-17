@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.horoscapp.CustomTestRunner"
     }
 
     buildTypes {
@@ -57,6 +57,7 @@ dependencies {
     val hiltVersion = "2.48.1"
     val retrofitVersion = "2.9.0"
     val cameraVersion = "1.2.3"
+    val espressoVersion = "3.5.1"
 
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
@@ -87,7 +88,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
     testImplementation("io.mockk:mockk:1.12.4")
+
     //IntegrationTesting
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoVersion")
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:$espressoVersion")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:$espressoVersion")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:$hiltVersion")
+    androidTestImplementation("androidx.fragment:fragment-testing:1.6.1")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:$hiltVersion")
 }
